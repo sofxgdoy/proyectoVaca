@@ -36,9 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\bolacontroller.cs" />
-     <Compile Include="Assets\Scripts\SwerveInputController.cs" />
      <Compile Include="Assets\Scripts\SwerveMovimiento.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\SwerveInputController.cs" />
+     <Compile Include="Assets\Scripts\bolacontroller.cs" />
+     <Compile Include="Assets\Scripts\StackMgr.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.33f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
