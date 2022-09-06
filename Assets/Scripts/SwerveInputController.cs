@@ -21,12 +21,17 @@ public class SwerveInputController : MonoBehaviour
             {
                 _movX = Input.mousePosition.x - _posicionDedoUltimoFrameX;  //cuanto se movio con respecto al último frame
                 _posicionDedoUltimoFrameX = Input.mousePosition.x;  //se actualiza la ultima posición
-
+                
+                
             }
             else if (Input.GetMouseButtonUp(0)) //true cuando se saca el dedo
             {
                 _movX = 0f; //sin el dedo en la pantalla, no se considera movimiento
              
             }
+
+
+        
+
         }
 }

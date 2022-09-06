@@ -2,20 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager GameManagerInstance;
     public List<Transform> Recoger = new List<Transform>();
     [SerializeField] private float Distance;
+    private string currentScene;
+    private AsyncOperation async;
+
     // Start is called before the first frame update
     void Start()
     {
         GameManagerInstance = this;
         Recoger.Add(gameObject.transform);
+    
     }
 
     // Update is called once per frame
+    public void CambioDeEscena(string sceneName){
+        SceneManager.LoadScene(sceneName);
+       
+    }
+
+    /*IEnumerator Load(string sceneName) {
+		SceneManager.LoadSceneAsync(sceneName);
+		async.allowSceneActivation = false;
+		yield return async;
+		
+    }*/
+
+    /*public void ActivateScene() {
+		async.allowSceneActivation = true;
+	}*/
+
+    public void ExitGame() {
+		
+		Application.Quit();  //salir
+		Debug.Log("Quit!");
+		
+	}
     void Update()
     {
         if (Recoger.Count > 1)
@@ -33,6 +60,7 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+
     }
 
     private void OnTriggerEnter(Collider other) 
