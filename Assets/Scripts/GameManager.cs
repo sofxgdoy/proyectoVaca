@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     private string currentScene;
     private AsyncOperation async;
 
+    public bool StartTheGame;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +47,11 @@ public class GameManager : MonoBehaviour
 	}
     void Update()
     {
+        if (Input.GetMouseButtonDown(0)) //devuelve true cuando se toca la pantalla
+        {     
+            StartTheGame = true;
+        }
+
         if (Recoger.Count > 1)
         {
             for (int i = 1; i < Recoger.Count; i++)
@@ -75,5 +82,18 @@ public class GameManager : MonoBehaviour
         other.GetComponent<Renderer>().material = GetComponent<Renderer>().material;
         Recoger.Add(other.transform);
        }
+
+       if (other.CompareTag("obs") && Recoger.Count > 0) 
+       {
+        Recoger.ElementAt(Recoger.Count -1).gameObject.SetActive(false);
+        Recoger.RemoveAt(Recoger.Count -1);
+       }
+
+       if (Recoger.Count == 0) {
+        StartTheGame = false;
+       }
+
+
+
     }
 }
