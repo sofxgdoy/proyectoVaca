@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     public static GameManager GameManagerInstance;
     public List<Transform> Recoger = new List<Transform>();
     [SerializeField] private float Distance;
+
+    /*[SerializeField] private Animator texto;
+    [SerializeField] private string scoreanim = "scoreanim"; */
     private string currentScene;
     private AsyncOperation async;
 
@@ -74,6 +77,7 @@ public class GameManager : MonoBehaviour
     {
        if (other.CompareTag("Vaca")) 
        {
+        /*texto.Play(scoreanim, 0, 0.0f);*/
         other.transform.parent = null;
         other.gameObject.AddComponent<Rigidbody>().isKinematic = true;
         other.gameObject.AddComponent<StackMgr>();
