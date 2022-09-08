@@ -17,6 +17,10 @@ public class GameManager : MonoBehaviour
 
     public bool StartTheGame;
 
+    public GameObject gameOver;
+    public GameObject canvas1;
+  
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +34,10 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(sceneName);
        
     }
+
+    public void ReloadScene() {
+		CambioDeEscena(SceneManager.GetActiveScene().name);
+	}
 
     /*IEnumerator Load(string sceneName) {
 		SceneManager.LoadSceneAsync(sceneName);
@@ -71,6 +79,8 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        
+
     }
 
     private void OnTriggerEnter(Collider other) 
@@ -95,7 +105,15 @@ public class GameManager : MonoBehaviour
 
        if (Recoger.Count <= 0) {
         StartTheGame = false;
+        GameOver();
        }
+
+    }
+
+    public void GameOver() {
+        gameOver.SetActive(true);
+        canvas1.SetActive(false);
+        
 
     }
 }

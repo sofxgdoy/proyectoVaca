@@ -45,3 +45,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Recoger: []
   Distance: 0
+  StartTheGame: 0
+  gameOver: {fileID: 0}

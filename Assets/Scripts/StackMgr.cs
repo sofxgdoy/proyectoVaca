@@ -36,6 +36,8 @@ public class StackMgr : MonoBehaviour
          if (GameManager.GameManagerInstance.Recoger.Count <= 0)
          {
             GameManager.GameManagerInstance.StartTheGame = false;
+
+            GameManager.GameManagerInstance.GameOver();
          }
 
          //other.GetComponent<Collider>().enabled = false;
