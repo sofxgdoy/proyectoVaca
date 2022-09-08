@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
 
                 if (DistanciaDeseada <= Distance)
                 {
-                    SectVaca.position = new Vector3(Mathf.Lerp(SectVaca.position.x, PrimeraVaca.position.x, 5f *Time.deltaTime), SectVaca.position.y, Mathf.Lerp(SectVaca.position.z, PrimeraVaca.position.z +12f, 5f * Time.deltaTime));
+                    SectVaca.position = new Vector3(Mathf.Lerp(SectVaca.position.x, PrimeraVaca.position.x, 5f *Time.deltaTime), SectVaca.position.y, Mathf.Lerp(SectVaca.position.z, PrimeraVaca.position.z +24f, 5f * Time.deltaTime));
                 }
             }
         }
@@ -87,17 +87,15 @@ public class GameManager : MonoBehaviour
         Recoger.Add(other.transform);
        }
 
-       if (other.CompareTag("obs") && Recoger.Count > 0) 
+    if (other.CompareTag("obs") && Recoger.Count > 0) 
        {
         Recoger.ElementAt(Recoger.Count -1).gameObject.SetActive(false);
         Recoger.RemoveAt(Recoger.Count -1);
        }
 
-       if (Recoger.Count == 0) {
+       if (Recoger.Count <= 0) {
         StartTheGame = false;
        }
-
-
 
     }
 }
