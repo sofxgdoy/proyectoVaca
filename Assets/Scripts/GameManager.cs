@@ -31,9 +31,17 @@ public class GameManager : MonoBehaviour
 
     // Update is called once per frame
     public void CambioDeEscena(string sceneName){
-        SceneManager.LoadScene(sceneName);
-       
+        //SceneManager.LoadScene(sceneName);//
+        StartCoroutine(CambioEscenaDelay());
+        
+       IEnumerator CambioEscenaDelay() {
+          yield return new WaitForSeconds(1.0f);
+    
+           SceneManager.LoadScene(sceneName);
+        }
     }
+
+    
 
     public void ReloadScene() {
 		CambioDeEscena(SceneManager.GetActiveScene().name);

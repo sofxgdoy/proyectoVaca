@@ -42,6 +42,8 @@
      <Compile Include="Assets\Scripts\scoretext.cs" />
      <Compile Include="Assets\Scripts\StackMgr.cs" />
      <Compile Include="Assets\Scripts\bolacontroller.cs" />
+     <Compile Include="Assets\Scripts\SoundManager.cs" />
+     <Compile Include="Assets\Scripts\BotonSonido.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.33f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
