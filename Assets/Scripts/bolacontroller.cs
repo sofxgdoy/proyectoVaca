@@ -5,6 +5,7 @@ using UnityEngine;
 public class bolacontroller : MonoBehaviour
 {
     private float posBola;
+  
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +15,7 @@ public class bolacontroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       MoveOnZ(0.2f);
+      MoveOnZ(0.3f);
        
        /* posBola.x = Mathf.Clamp(posBola.x, -17.4f, 15.8f);*/
 
