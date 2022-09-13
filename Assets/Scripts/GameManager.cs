@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour
 
                 if (DistanciaDeseada <= Distance)
                 {
-                    SectVaca.position = new Vector3(Mathf.Lerp(SectVaca.position.x, PrimeraVaca.position.x, 4f *Time.deltaTime), SectVaca.position.y, Mathf.Lerp(SectVaca.position.z, PrimeraVaca.position.z +15f, 4f * Time.deltaTime));
+                    SectVaca.position = new Vector3(Mathf.Lerp(SectVaca.position.x, PrimeraVaca.position.x, 5f *Time.deltaTime), SectVaca.position.y, Mathf.Lerp(SectVaca.position.z, PrimeraVaca.position.z +20f, 5f * Time.deltaTime));
                 }
             }
         }
@@ -101,7 +101,7 @@ public class GameManager : MonoBehaviour
         other.gameObject.AddComponent<StackMgr>();
         other.gameObject.GetComponent<Collider>().isTrigger = true;
         other.tag = gameObject.tag;
-        other.GetComponent<Renderer>().material = GetComponent<Renderer>().material;
+        /*other.GetComponent<Renderer>().material = GetComponent<Renderer>().material;*/
         Recoger.Add(other.transform);
        }
 
@@ -121,6 +121,7 @@ public class GameManager : MonoBehaviour
     public void GameOver() {
         gameOver.SetActive(true);
         canvas1.SetActive(false);
+        
         
 
     }
