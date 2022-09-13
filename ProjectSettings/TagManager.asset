@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Vaca
   - obs
+  - final
   layers:
   - Default
   - TransparentFX

@@ -13,9 +13,11 @@ public class GameManager : MonoBehaviour
     /*[SerializeField] private Animator texto;
     [SerializeField] private string scoreanim = "scoreanim"; */
     private string currentScene;
+    public string escena;
     private AsyncOperation async;
 
     public bool StartTheGame;
+    public bool bgameOver;
 
     public GameObject gameOver;
     public GameObject canvas1;
@@ -69,6 +71,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0)) //devuelve true cuando se toca la pantalla
         {     
             StartTheGame = true;
+            bgameOver=false;
         }
 
         if (Recoger.Count > 1)
@@ -105,7 +108,7 @@ public class GameManager : MonoBehaviour
         Recoger.Add(other.transform);
        }
 
-    if (other.CompareTag("obs") && Recoger.Count > 0) 
+       if (other.CompareTag("obs") && Recoger.Count > 0) 
        {
         Recoger.ElementAt(Recoger.Count -1).gameObject.SetActive(false);
         Recoger.RemoveAt(Recoger.Count -1);
@@ -114,7 +117,14 @@ public class GameManager : MonoBehaviour
        if (Recoger.Count <= 0) {
         StartTheGame = false;
         GameOver();
+        bgameOver=true;
        }
+
+        if (other.CompareTag("final")) {
+
+         SceneManager.LoadScene(escena);
+         
+        }
 
     }
 

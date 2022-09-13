@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Creditos.unity
     guid: df7597e99e5ffc544971bee612f08e24
+  - enabled: 1
+    path: Assets/Scenes/EtapaSuperada.unity
+    guid: 3d18760f1d2a87e42972301aeea121f0
   m_configObjects: {}

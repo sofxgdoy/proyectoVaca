@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class StackMgr : MonoBehaviour
 {
+   public string sceneName;
    private void OnTriggerEnter(Collider other)
    {
       if (other.CompareTag("Vaca"))
@@ -14,7 +16,7 @@ public class StackMgr : MonoBehaviour
         other.gameObject.AddComponent<StackMgr>();
         other.gameObject.GetComponent<Collider>().isTrigger = true;
         other.tag = gameObject.tag;
-        other.GetComponent<Renderer>().material = GetComponent<Renderer>().material;
+        
         GameManager.GameManagerInstance.Recoger.Add(other.transform);
 
       }
@@ -36,6 +38,7 @@ public class StackMgr : MonoBehaviour
          if (GameManager.GameManagerInstance.Recoger.Count <= 0)
          {
             GameManager.GameManagerInstance.StartTheGame = false;
+            GameManager.GameManagerInstance.bgameOver = true;
 
             GameManager.GameManagerInstance.GameOver();
          }
@@ -45,6 +48,9 @@ public class StackMgr : MonoBehaviour
 
       }
 
+      if (other.CompareTag("final")) {
+         SceneManager.LoadScene(3);
+      }
    }
 
   
