@@ -15,11 +15,11 @@ C:/Users/alanm/Documents/GitHub/proyectoVaca
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60514
+51176
 Successfully changed project path to: C:/Users/alanm/Documents/GitHub/proyectoVaca
 C:/Users/alanm/Documents/GitHub/proyectoVaca
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 89.00 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 101.58 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
 [Subsystems] Discovering subsystems at path G:/Unity Editor/2020.3.33f1/Editor/Data/Resources/UnitySubsystems
@@ -35,44 +35,275 @@ Initialize mono
 Mono path[0] = 'G:/Unity Editor/2020.3.33f1/Editor/Data/Managed'
 Mono path[1] = 'G:/Unity Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'G:/Unity Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56484
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56872
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: G:/Unity Editor/2020.3.33f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: G:/Unity Editor/2020.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002759 seconds.
+Registered in 0.002596 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 78.44 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 78.93 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.293 seconds
+- Completed reload, in  1.291 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1294ms)
-		BeginReloadAssembly (129ms)
+	ReloadAssembly (1292ms)
+		BeginReloadAssembly (134ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (994ms)
-			LoadAssemblies (126ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (990ms)
+			LoadAssemblies (133ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (365ms)
+			SetupTypeCache (356ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (66ms)
-			SetupLoadedEditorAssemblies (369ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (363ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (79ms)
-				BeforeProcessingInitializeOnLoad (19ms)
-				ProcessInitializeOnLoadAttributes (164ms)
-				ProcessInitializeOnLoadMethodAttributes (98ms)
+				BeforeProcessingInitializeOnLoad (20ms)
+				ProcessInitializeOnLoadAttributes (179ms)
+				ProcessInitializeOnLoadMethodAttributes (69ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (1ms)
+				EditorAssembliesLoaded (3ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.041496 seconds.
+Registered in 0.007444 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\alanm\Documents\GitHub\proyectoVaca\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.315 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2316ms)
+		BeginReloadAssembly (326ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (1856ms)
+			LoadAssemblies (209ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (643ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (101ms)
+			SetupLoadedEditorAssemblies (677ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (133ms)
+				ProcessInitializeOnLoadAttributes (511ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
+Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1659 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 194.8 MB.
+System memory in use after: 194.9 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2127.
+Total: 4.635900 ms (FindLiveObjects: 0.287900 ms CreateObjectMapping: 0.114400 ms MarkObjects: 4.172300 ms  DeleteObjects: 0.059400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Assets/Ovni/OvniPinza.fbx
+  artifactKey: Guid(32ee533b1f66d5444abefd80b50f528b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/OvniPinza.fbx using Guid(32ee533b1f66d5444abefd80b50f528b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10c4ac1b7fcf8630a5a187011d378935') in 0.499693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 88.849925 seconds.
+  path: Assets/Assets/Ovni/OvniPinza.fbx
+  artifactKey: Guid(32ee533b1f66d5444abefd80b50f528b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/OvniPinza.fbx using Guid(32ee533b1f66d5444abefd80b50f528b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7160841c779d6321e147b5c91175cc1d') in 0.048929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000474 seconds.
+  path: Assets/Assets/Ovni/Material.006.mat
+  artifactKey: Guid(5fd6f62574918354eb71f40d12f8012b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Material.006.mat using Guid(5fd6f62574918354eb71f40d12f8012b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59d91192a0ed41a2d4f238fd459861ba') in 0.166870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/Assets/Ovni/Material.009.mat
+  artifactKey: Guid(4f64a1a71cf264143850e23c3ad956c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Material.009.mat using Guid(4f64a1a71cf264143850e23c3ad956c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d1decc2935c07f86ecbf207b611460a') in 0.038692 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Assets/Ovni/Material.001.mat
+  artifactKey: Guid(9be3a105016007e4388b8f1c803c03a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Material.001.mat using Guid(9be3a105016007e4388b8f1c803c03a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd924b295c8c26870a78cdfeb4a41b4aa') in 0.026012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000395 seconds.
+  path: Assets/Assets/Ovni/Material.007.mat
+  artifactKey: Guid(5961a8543dcb5e94a88df6dd9c161d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Material.007.mat using Guid(5961a8543dcb5e94a88df6dd9c161d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdddf8260dfe0ea08196410aa711d599') in 0.026275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000752 seconds.
+  path: Assets/Assets/Ovni/Material.003.mat
+  artifactKey: Guid(1c4dfd0bcc2cf3443a186facaa675ade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Material.003.mat using Guid(1c4dfd0bcc2cf3443a186facaa675ade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4cb7c41168623e11e79d1299f56d5d4') in 0.024334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001399 seconds.
+  path: Assets/Assets/Ovni/Material.010.mat
+  artifactKey: Guid(5a4fbd4b5cdfc8f498f35e9a9d78615f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Material.010.mat using Guid(5a4fbd4b5cdfc8f498f35e9a9d78615f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40935ddb6bb61436039ccd38d79a83ac') in 0.032104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000818 seconds.
+  path: Assets/Assets/Ovni/Material.011.mat
+  artifactKey: Guid(d6096b210114e904693fe37e5486dcae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Material.011.mat using Guid(d6096b210114e904693fe37e5486dcae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd480b07fd4ff53f5b3b2822406cff2c3') in 0.033533 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/Assets/Ovni/Material.mat
+  artifactKey: Guid(a31a95fcf539aa4488357b3b87392865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Material.mat using Guid(a31a95fcf539aa4488357b3b87392865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a2b6387bc2045927b0ddef6629728d4') in 0.039941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/Assets/Ovni/Material.002.mat
+  artifactKey: Guid(33f09a78847be6d478a30080a6568c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Material.002.mat using Guid(33f09a78847be6d478a30080a6568c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '170b7d1a0009e1f35f55df43791f5e99') in 0.028177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000674 seconds.
+  path: Assets/Assets/Ovni/Material.005.mat
+  artifactKey: Guid(450f6df9176d5624db13dbf9e9699984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Material.005.mat using Guid(450f6df9176d5624db13dbf9e9699984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aacc46d1442985d79a74063a356a186') in 0.046534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Assets/Ovni/Material.008.mat
+  artifactKey: Guid(926ceca44d6facd44802ae58ef5427ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Material.008.mat using Guid(926ceca44d6facd44802ae58ef5427ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f46d0adea7b120eb43d6991fb99dfce') in 0.028163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Assets/Ovni/Material.004.mat
+  artifactKey: Guid(9f7e5c6873af90047855596fe5ab2b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Material.004.mat using Guid(9f7e5c6873af90047855596fe5ab2b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ff33780715da6a6847cd56a2cfa5b19') in 0.029343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 222.723172 seconds.
+  path: Assets/Assets/Ovni/VidrioOvni.mat
+  artifactKey: Guid(1c4dfd0bcc2cf3443a186facaa675ade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/VidrioOvni.mat using Guid(1c4dfd0bcc2cf3443a186facaa675ade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e1da960c1a12bc6966d1c7dd944cb39') in 0.026392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.235067 seconds.
+  path: Assets/Assets/Ovni/Ovni.mat
+  artifactKey: Guid(9f7e5c6873af90047855596fe5ab2b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Ovni.mat using Guid(9f7e5c6873af90047855596fe5ab2b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0282881c634def05bbabe3849637858') in 0.037009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.738944 seconds.
+  path: Assets/Assets/Ovni/Luz1.mat
+  artifactKey: Guid(450f6df9176d5624db13dbf9e9699984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Luz1.mat using Guid(450f6df9176d5624db13dbf9e9699984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72bec3f8c82e899886f48e2ce1515a65') in 0.020726 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.297286 seconds.
+  path: Assets/Assets/Ovni/redonditodeluz.mat
+  artifactKey: Guid(5fd6f62574918354eb71f40d12f8012b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/redonditodeluz.mat using Guid(5fd6f62574918354eb71f40d12f8012b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39af4212d71d21c8d49f7b6c750b09e8') in 0.039836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.820532 seconds.
+  path: Assets/Assets/Ovni/Luz2.mat
+  artifactKey: Guid(5961a8543dcb5e94a88df6dd9c161d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Luz2.mat using Guid(5961a8543dcb5e94a88df6dd9c161d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11226da5bf66a1c0c90f65f2a9578174') in 0.033475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.033424 seconds.
+  path: Assets/Assets/Ovni/Luz3.mat
+  artifactKey: Guid(4f64a1a71cf264143850e23c3ad956c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Luz3.mat using Guid(4f64a1a71cf264143850e23c3ad956c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e4e05abdbdf6b5a81359271b4a4e5a2') in 0.022703 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.053619 seconds.
+  path: Assets/Assets/Ovni/redonditoluz2.mat
+  artifactKey: Guid(5a4fbd4b5cdfc8f498f35e9a9d78615f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/redonditoluz2.mat using Guid(5a4fbd4b5cdfc8f498f35e9a9d78615f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cf8c253358fd4716c645ba60552c811') in 0.026824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 129.823452 seconds.
+  path: Assets/Assets/Ovni/redonditoluz3.mat
+  artifactKey: Guid(926ceca44d6facd44802ae58ef5427ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/redonditoluz3.mat using Guid(926ceca44d6facd44802ae58ef5427ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93c5e9131c93c81f230d1f31ecf58c9d') in 0.022482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.121686 seconds.
+  path: Assets/Assets/Ovni/Luz4.mat
+  artifactKey: Guid(33f09a78847be6d478a30080a6568c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Luz4.mat using Guid(33f09a78847be6d478a30080a6568c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dbc634207690ea7a93144f9e95d8de1') in 0.024142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 89.781542 seconds.
+  path: Assets/Assets/Ovni/sas.mat
+  artifactKey: Guid(33f09a78847be6d478a30080a6568c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/sas.mat using Guid(33f09a78847be6d478a30080a6568c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c93cdffba00137d46574cee0e24cbb4b') in 0.030753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.629034 seconds.
+  path: Assets/Assets/Ovni/Luz4.mat
+  artifactKey: Guid(d6096b210114e904693fe37e5486dcae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Luz4.mat using Guid(d6096b210114e904693fe37e5486dcae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4146120ff1949958c9e1df98d6abb9e9') in 0.024023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 174.093116 seconds.
+  path: Assets/Assets/Ovni/Material.001.mat
+  artifactKey: Guid(9be3a105016007e4388b8f1c803c03a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Material.001.mat using Guid(9be3a105016007e4388b8f1c803c03a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c82e8c573ad1a4910518acc81ce0a0eb') in 0.020119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000431 seconds.
+  path: Assets/Assets/Ovni/redonditoluz2.mat
+  artifactKey: Guid(5a4fbd4b5cdfc8f498f35e9a9d78615f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/redonditoluz2.mat using Guid(5a4fbd4b5cdfc8f498f35e9a9d78615f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e22b1690e903468e7611a520eefa0e') in 0.018315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000472 seconds.
+  path: Assets/Assets/Ovni/Material.011.mat
+  artifactKey: Guid(d6096b210114e904693fe37e5486dcae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Material.011.mat using Guid(d6096b210114e904693fe37e5486dcae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44bc1c93ece7af7745736f87e2d27a19') in 0.016060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Assets/Ovni/Material.mat
+  artifactKey: Guid(a31a95fcf539aa4488357b3b87392865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ovni/Material.mat using Guid(a31a95fcf539aa4488357b3b87392865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb174d91d09eef9f39b83f88fe9f3236') in 0.021729 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
