@@ -126,9 +126,19 @@ public class GameManager : MonoBehaviour
         bgameOver=true;
        }
 
-        if (other.CompareTag("final")) {
+        if (other.CompareTag("final")) 
+        {
+         soundManager.SeleccionAudio(3, 0.05f);
+         StartCoroutine(FinalNivel());
 
-         SceneManager.LoadScene(3);
+         //SceneManager.LoadScene(3);
+         
+         IEnumerator FinalNivel() 
+          {
+           yield return new WaitForSeconds(1.0f);
+    
+           SceneManager.LoadScene(3);
+          }
          
         }
 

@@ -8,6 +8,7 @@ public class StackMgr : MonoBehaviour
 {
    public string sceneName;
    private SoundManager soundManager;
+   private bool repetir = true;
 
    void Awake() {
       soundManager = FindObjectOfType<SoundManager>();
@@ -55,8 +56,21 @@ public class StackMgr : MonoBehaviour
 
       }
 
-      if (other.CompareTag("final")) {
-         SceneManager.LoadScene(3);
+      if (other.CompareTag("final") && repetir == true) {
+         soundManager.SeleccionAudio(3, 0.05f);
+         repetir = false;
+        
+         
+         StartCoroutine(FinalNivel());
+
+         //SceneManager.LoadScene(3);
+         
+         IEnumerator FinalNivel() 
+          {
+           yield return new WaitForSeconds(1.0f);
+    
+           SceneManager.LoadScene(3);
+          }
       }
    }
 
