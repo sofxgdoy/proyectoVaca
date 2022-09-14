@@ -55,7 +55,10 @@
      <Compile Include="Assets\Scripts\scoretext.cs" />
      <Compile Include="Assets\Scripts\StackMgr.cs" />
      <Compile Include="Assets\Scripts\bolacontroller.cs" />
+<<<<<<< Updated upstream
      <Compile Include="Assets\Scripts\muteAudio.cs" />
+=======
+>>>>>>> Stashed changes
  <Reference Include="UnityEngine">
  <HintPath>G:/Unity Editor/2020.3.33f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -638,9 +641,12 @@
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/alanm/Documents/GitHub/proyectoVaca/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
+<<<<<<< Updated upstream
  <Reference Include="Unity.2D.Sprite.Editor">
  <HintPath>C:/Users/alanm/Documents/GitHub/proyectoVaca/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
+=======
+>>>>>>> Stashed changes
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/alanm/Documents/GitHub/proyectoVaca/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
