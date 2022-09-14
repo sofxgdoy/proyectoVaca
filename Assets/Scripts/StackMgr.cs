@@ -7,6 +7,11 @@ using UnityEngine.SceneManagement;
 public class StackMgr : MonoBehaviour
 {
    public string sceneName;
+   private SoundManager soundManager;
+
+   void Awake() {
+      soundManager = FindObjectOfType<SoundManager>();
+   }
    private void OnTriggerEnter(Collider other)
    {
       if (other.CompareTag("Vaca"))
@@ -18,6 +23,7 @@ public class StackMgr : MonoBehaviour
         other.tag = gameObject.tag;
         
         GameManager.GameManagerInstance.Recoger.Add(other.transform);
+        soundManager.SeleccionAudio(1, 0.1f);
 
       }
 

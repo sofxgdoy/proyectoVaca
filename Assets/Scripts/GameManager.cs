@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject gameOver;
     public GameObject canvas1;
+
+    private SoundManager soundManager;
   
 
     // Start is called before the first frame update
@@ -28,6 +30,7 @@ public class GameManager : MonoBehaviour
     {
         GameManagerInstance = this;
         Recoger.Add(gameObject.transform);
+        soundManager = FindObjectOfType<SoundManager>();
     
     }
 
@@ -98,6 +101,7 @@ public class GameManager : MonoBehaviour
     {
        if (other.CompareTag("Vaca")) 
        {
+        
         /*texto.Play(scoreanim, 0, 0.0f);*/
         other.transform.parent = null;
         other.gameObject.AddComponent<Rigidbody>().isKinematic = true;
@@ -106,6 +110,7 @@ public class GameManager : MonoBehaviour
         other.tag = gameObject.tag;
         /*other.GetComponent<Renderer>().material = GetComponent<Renderer>().material;*/
         Recoger.Add(other.transform);
+        soundManager.SeleccionAudio(1, 0.1f);
        }
 
        if (other.CompareTag("obs") && Recoger.Count > 0) 
@@ -122,7 +127,7 @@ public class GameManager : MonoBehaviour
 
         if (other.CompareTag("final")) {
 
-         SceneManager.LoadScene(escena);
+         SceneManager.LoadScene(3);
          
         }
 
