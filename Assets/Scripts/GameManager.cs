@@ -110,13 +110,14 @@ public class GameManager : MonoBehaviour
         other.tag = gameObject.tag;
         /*other.GetComponent<Renderer>().material = GetComponent<Renderer>().material;*/
         Recoger.Add(other.transform);
-        soundManager.SeleccionAudio(1, 0.1f);
+        soundManager.SeleccionAudio(2, 0.1f);
        }
 
        if (other.CompareTag("obs") && Recoger.Count > 0) 
        {
         Recoger.ElementAt(Recoger.Count -1).gameObject.SetActive(false);
         Recoger.RemoveAt(Recoger.Count -1);
+        soundManager.SeleccionAudio(1, 0.05f);
        }
 
        if (Recoger.Count <= 0) {

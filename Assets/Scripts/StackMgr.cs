@@ -23,7 +23,7 @@ public class StackMgr : MonoBehaviour
         other.tag = gameObject.tag;
         
         GameManager.GameManagerInstance.Recoger.Add(other.transform);
-        soundManager.SeleccionAudio(1, 0.1f);
+        soundManager.SeleccionAudio(2, 0.1f);
 
       }
 
@@ -38,6 +38,7 @@ public class StackMgr : MonoBehaviour
            {
             GameManager.GameManagerInstance.Recoger.ElementAt( GameManager.GameManagerInstance.Recoger.Count - 1).gameObject.SetActive(false);
             GameManager.GameManagerInstance.Recoger.RemoveAt( GameManager.GameManagerInstance.Recoger.Count - 1 );
+            soundManager.SeleccionAudio(1, 0.05f);
            }
          }
 
