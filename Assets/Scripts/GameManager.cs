@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour
 
                 if (DistanciaDeseada <= Distance)
                 {
-                    SectVaca.position = new Vector3(Mathf.Lerp(SectVaca.position.x, PrimeraVaca.position.x, 5f *Time.deltaTime), SectVaca.position.y, Mathf.Lerp(SectVaca.position.z, PrimeraVaca.position.z +20f, 5f * Time.deltaTime));
+                    SectVaca.position = new Vector3(Mathf.Lerp(SectVaca.position.x, PrimeraVaca.position.x, 10f *Time.deltaTime), SectVaca.position.y, Mathf.Lerp(SectVaca.position.z, PrimeraVaca.position.z +27f, 10f * Time.deltaTime));
                 }
             }
         }
