@@ -17,6 +17,7 @@ public class StackMgr : MonoBehaviour
    {
       if (other.CompareTag("Vaca"))
       {
+         Debug.Log("stacking");
         other.transform.parent = null;
         other.gameObject.AddComponent<Rigidbody>().isKinematic = true;
         other.gameObject.AddComponent<StackMgr>();
