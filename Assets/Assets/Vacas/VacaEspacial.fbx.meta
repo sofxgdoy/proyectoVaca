@@ -3,7 +3,17 @@ guid: 543a80623fb79e74db7c287ff0a84082
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: a883bf8d664c2b64abceed51b2271c31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VacaMancha
+    second: {fileID: 2100000, guid: 2601d08587e8d1c429cbb5f41468150d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

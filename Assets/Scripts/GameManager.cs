@@ -84,12 +84,14 @@ public class GameManager : MonoBehaviour
                 var PrimeraVaca = Recoger.ElementAt(i - 1);
                 var SectVaca = Recoger.ElementAt(i);
 
-                var DistanciaDeseada = Vector3.Distance(PrimeraVaca.position, SectVaca.position);
+                //var DistanciaDeseada = Vector3.Distance(PrimeraVaca.position, SectVaca.position);
 
-                if (DistanciaDeseada <= Distance)
-                {
-                    SectVaca.position = new Vector3(Mathf.Lerp(SectVaca.position.x, PrimeraVaca.position.x, 10f *Time.deltaTime), SectVaca.position.y, Mathf.Lerp(SectVaca.position.z, PrimeraVaca.position.z +20f, 10f * Time.deltaTime));
-                }
+               // if (DistanciaDeseada <= Distance)
+                //{
+                    SectVaca.position = new Vector3(Mathf.Lerp(SectVaca.position.x, PrimeraVaca.position.x, 18f *Time.deltaTime), SectVaca.position.y, Mathf.Lerp(SectVaca.position.z, PrimeraVaca.position.z +11f, 18f * Time.deltaTime));
+               // }
+
+    
             }
         }
 
