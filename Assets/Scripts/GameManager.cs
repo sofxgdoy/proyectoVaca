@@ -131,14 +131,14 @@ public class GameManager : MonoBehaviour
 
         if (other.CompareTag("final")) 
         {
-         soundManager.SeleccionAudio(3, 0.05f);
+         //soundManager.SeleccionAudio(3, 0.05f);
          StartCoroutine(FinalNivel());
 
          //SceneManager.LoadScene(3);
          
          IEnumerator FinalNivel() 
           {
-           yield return new WaitForSeconds(1.0f);
+           yield return new WaitForSeconds(0.1f);
     
            SceneManager.LoadScene(3);
           }

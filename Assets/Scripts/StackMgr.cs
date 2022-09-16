@@ -58,7 +58,7 @@ public class StackMgr : MonoBehaviour
       }
 
       if (other.CompareTag("final") && repetir == true) {
-         soundManager.SeleccionAudio(3, 0.05f);
+         
          repetir = false;
         
          
@@ -68,7 +68,7 @@ public class StackMgr : MonoBehaviour
          
          IEnumerator FinalNivel() 
           {
-           yield return new WaitForSeconds(1.0f);
+           yield return new WaitForSeconds(0.1f);
     
            SceneManager.LoadScene(3);
           }

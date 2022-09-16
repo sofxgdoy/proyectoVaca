@@ -11,7 +11,7 @@ public class scoretext : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         scoreText.text = (GameManager.GameManagerInstance.Recoger.Count - 1).ToString();
     }
