@@ -13,7 +13,7 @@ public class bolacontroller : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
       MoveOnZ(0.5f);
        
