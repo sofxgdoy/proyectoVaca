@@ -13,6 +13,6 @@ public class scoretext : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        scoreText.text = (GameManager.GameManagerInstance.Recoger.Count - 1).ToString();
+        scoreText.text = (GameManager.GameManagerInstance.Balls.Count - 1).ToString();
     }
 }

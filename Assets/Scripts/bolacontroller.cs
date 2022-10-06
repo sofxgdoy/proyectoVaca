@@ -15,7 +15,7 @@ public class bolacontroller : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-      MoveOnZ(0.5f);
+      MoveOnZ(0.7f);
        
        /* posBola.x = Mathf.Clamp(posBola.x, -17.4f, 15.8f);*/
 

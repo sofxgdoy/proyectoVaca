@@ -1,133 +1,158 @@
-using System.Collections;
+using System;
+using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
+using System.Collections;
 using UnityEngine.SceneManagement;
-
 public class GameManager : MonoBehaviour
 {
+    [HideInInspector] public bool MoveByTouch, StartTheGame;
+    private Vector3 _mouseStartPos, PlayerStartPos;
+    [SerializeField] private float RoadSpeed, SwipeSpeed,Distance;
+    [SerializeField] private GameObject Road;
     public static GameManager GameManagerInstance;
-    public List<Transform> Recoger = new List<Transform>();
-    [SerializeField] private float Distance;
-
-    /*[SerializeField] private Animator texto;
-    [SerializeField] private string scoreanim = "scoreanim"; */
-    private string currentScene;
-    public string escena;
-    private AsyncOperation async;
-
-    public bool StartTheGame;
-    public bool bgameOver;
-
-    public GameObject gameOver;
-    public GameObject canvas1;
-
+    
+    private Camera mainCam;
     private SoundManager soundManager;
-  
 
-    // Start is called before the first frame update
+    private SceneManagement sceneManagement;
+    public List<Transform> Balls = new List<Transform>();
+    //public GameObject Newball;
+    //public ParticleSystem Explosion;
     void Start()
     {
         GameManagerInstance = this;
-        Recoger.Add(gameObject.transform);
+        mainCam = Camera.main;
+        Balls.Add(gameObject.transform);
         soundManager = FindObjectOfType<SoundManager>();
-    
-    }
-
-    // Update is called once per frame
-    public void CambioDeEscena(string sceneName){
-        //SceneManager.LoadScene(sceneName);//
-        StartCoroutine(CambioEscenaDelay());
-        
-       IEnumerator CambioEscenaDelay() {
-          yield return new WaitForSeconds(1.0f);
-    
-           SceneManager.LoadScene(sceneName);
-        }
+        sceneManagement = FindObjectOfType<SceneManagement>();
     }
 
     
 
-    public void ReloadScene() {
-		CambioDeEscena(SceneManager.GetActiveScene().name);
-	}
+    
 
-    /*IEnumerator Load(string sceneName) {
-		SceneManager.LoadSceneAsync(sceneName);
-		async.allowSceneActivation = false;
-		yield return async;
-		
-    }*/
+    
 
-    /*public void ActivateScene() {
-		async.allowSceneActivation = true;
-	}*/
 
-    public void ExitGame() {
-		
-		Application.Quit();  //salir
-		Debug.Log("Quit!");
-		
-	}
-    void Update()
+    void FixedUpdate()
     {
-        if (Input.GetMouseButtonDown(0)) //devuelve true cuando se toca la pantalla
-        {     
-            StartTheGame = true;
-            bgameOver=false;
-        }
-
-        if (Recoger.Count > 1)
+        if (Input.GetMouseButtonDown(0))
         {
-            for (int i = 1; i < Recoger.Count; i++)
+            StartTheGame = MoveByTouch = true;
+            
+            /*Plane newPlan = new Plane(Vector3.up, 0f);
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            if (newPlan.Raycast(ray,out var distance))
             {
-                var PrimeraVaca = Recoger.ElementAt(i - 1);
-                var SectVaca = Recoger.ElementAt(i);
-
-                //var DistanciaDeseada = Vector3.Distance(PrimeraVaca.position, SectVaca.position);
-
-               // if (DistanciaDeseada <= Distance)
-                //{
-                    SectVaca.position = new Vector3(Mathf.Lerp(SectVaca.position.x, PrimeraVaca.position.x, 30f *Time.deltaTime), SectVaca.position.y, Mathf.Lerp(SectVaca.position.z, PrimeraVaca.position.z +11f, 30f * Time.deltaTime));
-               // }
-
-    
-            }
+                _mouseStartPos = ray.GetPoint(distance);
+                //PlayerStartPos = ball.position;
+            }*/
         }
 
-        
+        /*if (Input.GetMouseButtonUp(0))
+        {
+            MoveByTouch = false;
+        }
 
+        if (MoveByTouch)
+        {
+            var plane = new Plane(Vector3.up, 0f);
+
+            float distance;
+
+            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            if (plane.Raycast(ray, out distance))
+            {
+                Vector3 mousePos = ray.GetPoint(distance);
+                Vector3 desirePso = mousePos - _mouseStartPos;
+                Vector3 move = PlayerStartPos + desirePso;
+
+                move.x = Mathf.Clamp(move.x, -30f, 30f);
+                move.z = -2f;
+
+                var player = transform.position;
+
+                player = new Vector3(Mathf.Lerp(player.x, move.x, Time.fixedDeltaTime * (SwipeSpeed + 5f)), player.y, player.z);
+
+                transform.position = player;
+            }
+        }*/
+
+        if (StartTheGame) 
+            Road.transform.Translate(Vector3.forward * (RoadSpeed * -1 * Time.fixedDeltaTime));
+
+        if (Balls.Count > 1)
+        {
+            for (int i = 1; i < Balls.Count; i++)
+            {
+                var FirstBall = Balls.ElementAt(i - 1);
+                var SectBall = Balls.ElementAt(i);
+
+              //  var DesireDistance = Vector3.Distance(FirstBall.position,SectBall.position );
+
+            //    if (DesireDistance <= Distance)
+            //    {
+                    SectBall.position = new Vector3(Mathf.Lerp(SectBall.position.x,FirstBall.position.x,SwipeSpeed * Time.deltaTime)
+                    ,SectBall.position.y,Mathf.Lerp(SectBall.position.z,FirstBall.position.z + 8f, SwipeSpeed * Time.deltaTime));
+              //  }
+            }
+        
+        }
+        
     }
 
-    private void OnTriggerEnter(Collider other) 
+    private void LateUpdate()
     {
-        
-       if (other.CompareTag("Vaca")) 
-       {
-        
-        /*texto.Play(scoreanim, 0, 0.0f);*/
-        other.transform.parent = null;
-        other.gameObject.AddComponent<Rigidbody>().isKinematic = true;
-        other.gameObject.AddComponent<StackMgr>();
-        other.gameObject.GetComponent<Collider>().isTrigger = true;
-        other.tag = gameObject.tag;
-        /*other.GetComponent<Renderer>().material = GetComponent<Renderer>().material;*/
-        Recoger.Add(other.transform);
-        soundManager.SeleccionAudio(2, 0.1f);
-       }
+        if (StartTheGame)
+            mainCam.transform.position = new Vector3(Mathf.Lerp(mainCam.transform.position.x, transform.position.x, (SwipeSpeed - 5f) * Time.fixedDeltaTime),
+                    mainCam.transform.position.y, mainCam.transform.position.z);
+    }
 
-       if (other.CompareTag("obs") && Recoger.Count > 0) 
-       {
-        Recoger.ElementAt(Recoger.Count -1).gameObject.SetActive(false);
-        Recoger.RemoveAt(Recoger.Count -1);
-        soundManager.SeleccionAudio(1, 0.05f);
-       }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Vaca"))
+        {
+            other.transform.parent = null;
+            other.gameObject.AddComponent<Rigidbody>().isKinematic = true;
+            other.gameObject.AddComponent<StackMgr>();
+            other.gameObject.GetComponent<Collider>().isTrigger = true;
+            other.tag = gameObject.tag;
+            //other.GetComponent<Renderer>().material = GetComponent<Renderer>().material;
+            Balls.Add(other.transform);
+            soundManager.SeleccionAudio(2, 0.1f);
+        }
 
-       if (Recoger.Count <= 0) {
-        StartTheGame = false;
-        GameOver();
-        bgameOver=true;
-       }
+        /*if (other.CompareTag("add"))
+        {
+            var NoAdd = Int16.Parse(other.transform.GetChild(0).name);
+
+            for (int i = 0; i < NoAdd; i++)
+            {
+              GameObject Ball =  Instantiate(Newball, Balls.ElementAt(Balls.Count - 1).position + new Vector3(0f, 0f, 0.5f),
+                    Quaternion.identity);
+              
+              Balls.Add(Ball.transform);
+              
+            }
+            
+        }*/
+
+        if (other.CompareTag("obs") && Balls.Count > 0)
+        {
+            
+            Balls.ElementAt(Balls.Count - 1).gameObject.SetActive(false);
+            Balls.RemoveAt(Balls.Count - 1);
+            //soundManager.SeleccionAudio(1, 0.05f);
+        }
+
+        if (Balls.Count == 0)
+        {
+            StartTheGame = false;
+            sceneManagement.GameOver();
+        }
 
         if (other.CompareTag("final")) 
         {
@@ -147,11 +172,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void GameOver() {
-        gameOver.SetActive(true);
-        canvas1.SetActive(false);
-        
-        
+    
 
-    }
+    
 }
