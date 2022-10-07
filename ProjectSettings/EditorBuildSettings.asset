@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EtapaSuperada.unity
     guid: 3d18760f1d2a87e42972301aeea121f0
+  - enabled: 1
+    path: Assets/Scenes/Nivel2.unity
+    guid: 13da4698472a1d44d9d37e72c107255f
   m_configObjects: {}
