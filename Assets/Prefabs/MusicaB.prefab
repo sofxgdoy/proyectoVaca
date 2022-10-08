@@ -37,7 +37,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 754.4164, y: 1617.6}
-  m_SizeDelta: {x: 265.288, y: 230.623}
+  m_SizeDelta: {x: 265.28796, y: 230.62305}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3154018902126978651
 CanvasRenderer:
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2673197721453089329, guid: c9f39cfc0d49ac84cb3770daefa29980,
+  m_Sprite: {fileID: -5164981219958476066, guid: 6d46be362bd33124e8bf1648c71685a3,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac0c513e7dc2ec4e8f0297fbe8b7f8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundOffImage: {fileID: -7331169374525615829, guid: c9f39cfc0d49ac84cb3770daefa29980,
+  soundOffImage: {fileID: -1601141170660019372, guid: 6d46be362bd33124e8bf1648c71685a3,
     type: 3}
   button: {fileID: 3154018902126978629}
   audioSource: {fileID: 0}
