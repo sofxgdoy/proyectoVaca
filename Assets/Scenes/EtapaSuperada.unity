@@ -632,7 +632,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 670701173}
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
-        m_MethodName: CambioDeEscena
+        m_MethodName: CambioXNivel
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

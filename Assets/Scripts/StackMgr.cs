@@ -8,11 +8,22 @@ public class StackMgr : MonoBehaviour
 {
     private SceneManagement sceneManagement;
     private SoundManager soundManager;
+    Scene escenaActual;
+    string nombreEscena;
+
+    public static bool Nivel1 = false;
+    public static bool Nivel2 = false;
+    public static bool Nivel3 = false;
+    public static bool Nivel4 = false;
+    public static bool Nivel5 = false;
     
 
     void Start() {
         sceneManagement = FindObjectOfType<SceneManagement>();
         soundManager = FindObjectOfType<SoundManager>();
+        escenaActual = SceneManager.GetActiveScene();
+        nombreEscena = escenaActual.name;
+        
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -65,6 +76,27 @@ public class StackMgr : MonoBehaviour
 
         if (other.CompareTag("final")) 
         {
+
+            if (nombreEscena == "Nivel1") {
+               Nivel1 = true;
+
+            }
+            if (nombreEscena == "Nivel2") {
+               Nivel2 = true;
+
+            }
+            if (nombreEscena == "Nivel3") {
+               Nivel3 = true;
+
+            }
+            if (nombreEscena == "Nivel4") {
+               Nivel4 = true;
+
+            }
+            if (nombreEscena == "Nivel5") {
+               Nivel5 = true;
+
+            }
          //soundManager.SeleccionAudio(3, 0.05f);
          StartCoroutine(FinalNivel());
 

@@ -15,8 +15,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -49,8 +51,6 @@ ScriptsOnlyBuild:
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
-      Script: {instanceID: 0}
-    - Class: 89
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -112,8 +112,6 @@ ScriptsOnlyBuild:
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
-      Script: {instanceID: 0}
-    - Class: 89
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -181,8 +179,6 @@ ScriptsOnlyBuild:
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
-      Script: {instanceID: 0}
-    - Class: 89
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -350,6 +346,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -358,6 +356,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 1464}
     - Class: 114
       Script: {instanceID: 1562}
+    - Class: 114
+      Script: {instanceID: 2074}
     - Class: 114
       Script: {instanceID: 2390}
     - Class: 114
@@ -379,6 +379,245 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4614}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Nivel3.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1464}
+    - Class: 114
+      Script: {instanceID: 1562}
+    - Class: 114
+      Script: {instanceID: 2074}
+    - Class: 114
+      Script: {instanceID: 2390}
+    - Class: 114
+      Script: {instanceID: 2512}
+    - Class: 114
+      Script: {instanceID: 2712}
+    - Class: 114
+      Script: {instanceID: 2912}
+    - Class: 114
+      Script: {instanceID: 3006}
+    - Class: 114
+      Script: {instanceID: 3184}
+    - Class: 114
+      Script: {instanceID: 3538}
+    - Class: 114
+      Script: {instanceID: 3722}
+    - Class: 114
+      Script: {instanceID: 3918}
+    - Class: 114
+      Script: {instanceID: 4614}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Nivel4.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1464}
+    - Class: 114
+      Script: {instanceID: 1562}
+    - Class: 114
+      Script: {instanceID: 2074}
+    - Class: 114
+      Script: {instanceID: 2390}
+    - Class: 114
+      Script: {instanceID: 2512}
+    - Class: 114
+      Script: {instanceID: 2712}
+    - Class: 114
+      Script: {instanceID: 2912}
+    - Class: 114
+      Script: {instanceID: 3006}
+    - Class: 114
+      Script: {instanceID: 3184}
+    - Class: 114
+      Script: {instanceID: 3538}
+    - Class: 114
+      Script: {instanceID: 3722}
+    - Class: 114
+      Script: {instanceID: 3918}
+    - Class: 114
+      Script: {instanceID: 4614}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Nivel5.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1464}
+    - Class: 114
+      Script: {instanceID: 1562}
+    - Class: 114
+      Script: {instanceID: 2074}
+    - Class: 114
+      Script: {instanceID: 2390}
+    - Class: 114
+      Script: {instanceID: 2512}
+    - Class: 114
+      Script: {instanceID: 2712}
+    - Class: 114
+      Script: {instanceID: 2912}
+    - Class: 114
+      Script: {instanceID: 3006}
+    - Class: 114
+      Script: {instanceID: 3184}
+    - Class: 114
+      Script: {instanceID: 3538}
+    - Class: 114
+      Script: {instanceID: 3722}
+    - Class: 114
+      Script: {instanceID: 3918}
+    - Class: 114
+      Script: {instanceID: 4614}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -896,4 +1135,7 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Creditos.unity
   - Assets/Scenes/EtapaSuperada.unity
   - Assets/Scenes/Nivel2.unity
-  playerPath: C:/Users/chuch/OneDrive/Escritorio/build+nivel2.apk
+  - Assets/Scenes/Nivel3.unity
+  - Assets/Scenes/Nivel4.unity
+  - Assets/Scenes/Nivel5.unity
+  playerPath: C:/Users/chuch/OneDrive/Escritorio/buildniveles+some music.apk

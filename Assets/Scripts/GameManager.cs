@@ -16,9 +16,11 @@ public class GameManager : MonoBehaviour
     private SoundManager soundManager;
 
     private SceneManagement sceneManagement;
+    
     public List<Transform> Balls = new List<Transform>();
     //public GameObject Newball;
     //public ParticleSystem Explosion;
+ 
     void Start()
     {
         GameManagerInstance = this;
@@ -26,6 +28,7 @@ public class GameManager : MonoBehaviour
         Balls.Add(gameObject.transform);
         soundManager = FindObjectOfType<SoundManager>();
         sceneManagement = FindObjectOfType<SceneManagement>();
+        
     }
 
     
