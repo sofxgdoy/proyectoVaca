@@ -2,7 +2,6 @@ using System;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine.Analytics;
 using System.Collections;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
@@ -24,7 +23,6 @@ public class GameManager : MonoBehaviour
  
     void Start()
     {
-        
         GameManagerInstance = this;
         mainCam = Camera.main;
         Balls.Add(gameObject.transform);
@@ -87,7 +85,6 @@ public class GameManager : MonoBehaviour
         }*/
 
         if (StartTheGame) 
-            
             Road.transform.Translate(Vector3.forward * (RoadSpeed * -1 * Time.fixedDeltaTime));
 
         if (Balls.Count > 1)
@@ -162,7 +159,6 @@ public class GameManager : MonoBehaviour
 
         if (other.CompareTag("final")) 
         {
-         //AnalyticsEvent.LevelComplete();
          //soundManager.SeleccionAudio(3, 0.05f);
          StartCoroutine(FinalNivel());
 
