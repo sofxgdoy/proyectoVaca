@@ -42,13 +42,12 @@
      <Compile Include="Assets\Scripts\SoundManager.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\SceneManagement.cs" />
+     <Compile Include="Assets\Scripts\ControlVaca.cs" />
      <Compile Include="Assets\Scripts\SwerveInputController.cs" />
      <Compile Include="Assets\Scripts\scoretext.cs" />
      <Compile Include="Assets\Scripts\StackMgr.cs" />
      <Compile Include="Assets\Scripts\bolacontroller.cs" />
      <Compile Include="Assets\Scripts\muteAudio.cs" />
-     <Compile Include="Assets\Scripts\UnityServices.cs" />
-     <Compile Include="Assets\Scripts\ControlVaca.cs" />
      <Compile Include="Assets\TiendaController.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.33f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
