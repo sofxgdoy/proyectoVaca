@@ -95,6 +95,7 @@ public class StackMgr : MonoBehaviour
             }
             if (nombreEscena == "Nivel5") {
                Nivel5 = true;
+               SceneManager.LoadScene("JuegoSuperado");
 
             }
          //soundManager.SeleccionAudio(3, 0.05f);

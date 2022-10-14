@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tienda.unity
     guid: e14e2f937cada7646b3796aa85af4375
+  - enabled: 1
+    path: Assets/Scenes/JuegoSuperado.unity
+    guid: 2e67cf13e711acf46bbb62abe4fd0d8d
   m_configObjects: {}
