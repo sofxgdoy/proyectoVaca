@@ -79,12 +79,20 @@ public class SceneManagement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Nivel1 = StackMgr.Nivel1;
         Nivel2 = StackMgr.Nivel2;
         Nivel3 = StackMgr.Nivel3;
         Nivel4 = StackMgr.Nivel4;
         Nivel5 = StackMgr.Nivel5;
+
+        if (nombreEscena == "JuegoSuperado") {
+            StackMgr.Nivel1 = false;
+            StackMgr.Nivel2 = false;
+            StackMgr.Nivel3 = false;
+            StackMgr.Nivel4 = false;
+            StackMgr.Nivel5 = false;
+        }
     }
 }
