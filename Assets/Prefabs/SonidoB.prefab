@@ -67,8 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4586033613121459427, guid: d6ee8b8b7a1c79d489c749d1f199829e,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0a65543657ab719408fc718024ca09ab, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -146,7 +145,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac0c513e7dc2ec4e8f0297fbe8b7f8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundOffImage: {fileID: -4095927750204730845, guid: d6ee8b8b7a1c79d489c749d1f199829e,
-    type: 3}
+  soundOffImage: {fileID: 21300000, guid: ce89cceca61bd9145a44205e26ddaf0a, type: 3}
   button: {fileID: 6691702014515095892}
   audioSource: {fileID: 0}

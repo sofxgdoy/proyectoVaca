@@ -6,10 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class StackMgr : MonoBehaviour
 {
+    private scoretext scoreCode;
     private SceneManagement sceneManagement;
     private SoundManager soundManager;
     Scene escenaActual;
     string nombreEscena;
+
+    public GameObject texto_floatPrefab;
 
     public static bool Nivel1 = false;
     public static bool Nivel2 = false;
@@ -23,6 +26,7 @@ public class StackMgr : MonoBehaviour
         soundManager = FindObjectOfType<SoundManager>();
         escenaActual = SceneManager.GetActiveScene();
         nombreEscena = escenaActual.name;
+        scoreCode = FindObjectOfType<scoretext>();
         
     }
     private void OnTriggerEnter(Collider other)
@@ -36,6 +40,11 @@ public class StackMgr : MonoBehaviour
              other.tag = gameObject.tag;
              other.GetComponent<Renderer>().material = GetComponent<Renderer>().material;
             GameManager.GameManagerInstance.Balls.Add(other.transform);
+            //trigger texto
+            
+            
+           
+            
             soundManager.SeleccionAudio(2, 0.1f);
         }
         
@@ -79,18 +88,22 @@ public class StackMgr : MonoBehaviour
 
             if (nombreEscena == "Nivel1") {
                Nivel1 = true;
+               scoreCode.SumarMonedas();
 
             }
             if (nombreEscena == "Nivel2") {
                Nivel2 = true;
+               scoreCode.SumarMonedas();
 
             }
             if (nombreEscena == "Nivel3") {
                Nivel3 = true;
+               scoreCode.SumarMonedas();
 
             }
             if (nombreEscena == "Nivel4") {
                Nivel4 = true;
+               scoreCode.SumarMonedas();
 
             }
             if (nombreEscena == "Nivel5") {
@@ -112,4 +125,6 @@ public class StackMgr : MonoBehaviour
          
         }
     }
+
+    
 }
