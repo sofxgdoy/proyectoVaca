@@ -51,6 +51,10 @@ public class SceneManagement : MonoBehaviour
 
     public void CambioXNivel(string sceneName) {
 
+        if (Nivel1 == false) {
+            SceneManager.LoadScene("Nivel1");
+        }
+
        
         if (Nivel1== true && Nivel2 == false) {
             SceneManager.LoadScene("Nivel2");

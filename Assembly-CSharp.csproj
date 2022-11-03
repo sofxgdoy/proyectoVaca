@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\SwerveMovimiento.cs" />
+     <Compile Include="Assets\Scripts\SkinManager.cs" />
      <Compile Include="Assets\Scripts\gancho.cs" />
      <Compile Include="Assets\Scripts\BotonSonido.cs" />
      <Compile Include="Assets\Scenes\WinSound.cs" />
@@ -52,7 +53,7 @@
      <Compile Include="Assets\Scripts\bolacontroller.cs" />
      <Compile Include="Assets\Scripts\muteAudio.cs" />
      <Compile Include="Assets\TiendaController.cs" />
-     <Compile Include="Assets\Scripts\SkinManager.cs" />
+     <Compile Include="Assets\Scripts\CerrarPanel.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.33f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
