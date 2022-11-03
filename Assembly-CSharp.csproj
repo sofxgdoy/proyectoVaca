@@ -40,6 +40,7 @@
      <Compile Include="Assets\Scripts\gancho.cs" />
      <Compile Include="Assets\Scripts\BotonSonido.cs" />
      <Compile Include="Assets\Scenes\WinSound.cs" />
+     <Compile Include="Assets\Scripts\VacaTexto.cs" />
      <Compile Include="Assets\Scripts\UnityServices.cs" />
      <Compile Include="Assets\Scripts\SoundManager.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
@@ -51,7 +52,7 @@
      <Compile Include="Assets\Scripts\bolacontroller.cs" />
      <Compile Include="Assets\Scripts\muteAudio.cs" />
      <Compile Include="Assets\TiendaController.cs" />
-     <Compile Include="Assets\Scripts\VacaTexto.cs" />
+     <Compile Include="Assets\Scripts\SkinManager.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.33f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

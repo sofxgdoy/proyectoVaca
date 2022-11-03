@@ -54,7 +54,7 @@ public class TiendaController : MonoBehaviour
         if (RedSkin_ != 0) 
         {
            SkinActual = 3;   // le damos un valor de skin actual diferente a cada skin
-           PlayerPrefs.SetInt("CSkin", 3);
+           PlayerPrefs.SetInt("SkinAct", 3);
         }
         else {
             Monedas -= 200;  //valor estimativo q cuesta la skin
@@ -64,7 +64,7 @@ public class TiendaController : MonoBehaviour
             PlayerPrefs.SetInt("Red", 1);
             RedSkin_ = PlayerPrefs.GetInt("Red");
             SkinActual = 3;
-            PlayerPrefs.SetInt("CSkin", 3);
+            PlayerPrefs.SetInt("SkinAct", 3);
 
         }
 
@@ -74,7 +74,7 @@ public class TiendaController : MonoBehaviour
         if (BlueSkin_ != 0) 
         {
            SkinActual = 1;
-           PlayerPrefs.SetInt("CSkin", 1);
+           PlayerPrefs.SetInt("SkinAct", 1);
         }
         else {
             Monedas -= 200;  //valor estimativo
@@ -84,7 +84,7 @@ public class TiendaController : MonoBehaviour
             PlayerPrefs.SetInt("Blue", 1);
             BlueSkin_ = PlayerPrefs.GetInt("Blue");
             SkinActual = 1;
-            PlayerPrefs.SetInt("CSkin", 1);
+            PlayerPrefs.SetInt("SkinAct", 1);
 
         }
 
@@ -93,7 +93,7 @@ public class TiendaController : MonoBehaviour
     public void GreenSkin() {
         if (GreenSkin_ != 0) {
             SkinActual = 2;
-            PlayerPrefs.SetInt("CSkin", 2);
+            PlayerPrefs.SetInt("SkinAct", 2);
         }
         else {
             Monedas -= 200;  //valor estimativo
@@ -103,7 +103,7 @@ public class TiendaController : MonoBehaviour
             PlayerPrefs.SetInt("Green", 1);
             GreenSkin_ = PlayerPrefs.GetInt("Green");
             SkinActual = 2;
-            PlayerPrefs.SetInt("CSkin", 2);
+            PlayerPrefs.SetInt("SkinAct", 2);
 
         }
 
