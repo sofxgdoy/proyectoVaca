@@ -38,10 +38,23 @@ public class StackMgr : MonoBehaviour
              other.gameObject.AddComponent<StackMgr>();
              other.gameObject.GetComponent<Collider>().isTrigger = true;
              other.tag = gameObject.tag;
+             
              other.GetComponent<Renderer>().material = GetComponent<Renderer>().material;
             GameManager.GameManagerInstance.Balls.Add(other.transform);
             //trigger texto
             
+            other.transform.localScale = new Vector3 (450, 450, 450f);
+            StartCoroutine(VolverTamaño());
+
+            IEnumerator VolverTamaño() 
+           {
+             yield return new WaitForSeconds(0.15f);
+             other.transform.localScale = new Vector3 (300, 300, 300f);
+    
+            }
+            
+             
+     
             
            
             

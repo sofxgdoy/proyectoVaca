@@ -126,6 +126,16 @@ public class GameManager : MonoBehaviour
             //other.GetComponent<Renderer>().material = GetComponent<Renderer>().material;
             Balls.Add(other.transform);
             soundManager.SeleccionAudio(2, 0.1f);
+
+            other.transform.localScale = new Vector3 (450, 450, 450f);
+            StartCoroutine(VolverTamaño());
+
+            IEnumerator VolverTamaño() 
+           {
+             yield return new WaitForSeconds(0.15f);
+             other.transform.localScale = new Vector3 (300, 300, 300f);
+    
+            }
         }
 
         /*if (other.CompareTag("add"))
