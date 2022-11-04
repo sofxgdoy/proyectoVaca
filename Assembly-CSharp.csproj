@@ -36,24 +36,25 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\SwerveMovimiento.cs" />
-     <Compile Include="Assets\Scripts\SkinManager.cs" />
-     <Compile Include="Assets\Scripts\gancho.cs" />
-     <Compile Include="Assets\Scripts\BotonSonido.cs" />
+     <Compile Include="Assets\Scenes\SampleScene\Scripts\SwerveMovimiento.cs" />
+     <Compile Include="Assets\Scenes\SampleScene\Scripts\SkinManager.cs" />
+     <Compile Include="Assets\Scenes\SampleScene\Scripts\CerrarPanel.cs" />
+     <Compile Include="Assets\Scenes\SampleScene\Scripts\gancho.cs" />
+     <Compile Include="Assets\Scenes\SampleScene\Scripts\BotonSonido.cs" />
      <Compile Include="Assets\Scenes\WinSound.cs" />
-     <Compile Include="Assets\Scripts\VacaTexto.cs" />
-     <Compile Include="Assets\Scripts\UnityServices.cs" />
-     <Compile Include="Assets\Scripts\SoundManager.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\SceneManagement.cs" />
-     <Compile Include="Assets\Scripts\ControlVaca.cs" />
-     <Compile Include="Assets\Scripts\SwerveInputController.cs" />
-     <Compile Include="Assets\Scripts\scoretext.cs" />
-     <Compile Include="Assets\Scripts\StackMgr.cs" />
-     <Compile Include="Assets\Scripts\bolacontroller.cs" />
-     <Compile Include="Assets\Scripts\muteAudio.cs" />
+     <Compile Include="Assets\Scenes\SampleScene\Scripts\VacaTexto.cs" />
+     <Compile Include="Assets\Scenes\SampleScene\Scripts\UnityServices.cs" />
+     <Compile Include="Assets\Scenes\SampleScene\Scripts\SoundManager.cs" />
+     <Compile Include="Assets\Scenes\SampleScene\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scenes\SampleScene\Scripts\SceneManagement.cs" />
+     <Compile Include="Assets\Scenes\SampleScene\Scripts\ControlVaca.cs" />
+     <Compile Include="Assets\Scenes\SampleScene\Scripts\SwerveInputController.cs" />
+     <Compile Include="Assets\Scenes\SampleScene\Scripts\scoretext.cs" />
+     <Compile Include="Assets\Scenes\SampleScene\Scripts\StackMgr.cs" />
+     <Compile Include="Assets\Scenes\SampleScene\Scripts\bolacontroller.cs" />
+     <Compile Include="Assets\Scenes\SampleScene\Scripts\muteAudio.cs" />
      <Compile Include="Assets\TiendaController.cs" />
-     <Compile Include="Assets\Scripts\CerrarPanel.cs" />
+     <Compile Include="Assets\Scenes\SampleScene\Scripts\PlayerPref.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.33f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
